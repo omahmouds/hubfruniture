@@ -1,0 +1,196 @@
+.dropbtn {
+    color: #1A2955;
+    padding: 12px;
+    font-size: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover { color: #992443;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: #992443;
+  }
+  #ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+  }
+  
+    #ul li {
+    float: left;
+    border-right:1px solid #bbb;
+    border-right: none;
+  
+  }
+  
+  
+    #ul li a {
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+    #ul li img{
+    width: 20px;
+  }
+  .logo{
+    background-color: #1A2955;
+    font-size: 25px;
+    width: 15px 50px;
+    color: white;
+  }
+  .logo a{
+    border-radius: 55px;
+  }
+  .logo span{
+    background-color: #C02335;
+    border-radius: 25px;
+    padding: 6px;
+  }
+  .menu1{
+    margin-left:100px ;
+    font-size: 25px;
+  }
+  .inside :hover{
+     color:#C02335 ;/*لسة محتاج اظبط اللون */
+  }
+  .menu1 .logo{
+    margin-left: 0;
+    margin-right: 400px;
+  }
+  .w3-dropdown-hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+}
+ul li {
+    float: left;
+}
+ul li a{
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li .pp{
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li a :hover{
+    color: #C02335; /* the hover is not working why ? */
+}
+section{
+    margin: 50px;
+}
+section h2{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1A2955;
+}
+section p{
+    text-align: left;
+    font-size: 15px;
+    color: #1A2955;
+}
+footer{
+  background-color: #1A2955;
+  margin-bottom: 0;
+}
+.row6{
+  display: flex;
+  justify-content: space-between;
+  color: #656363;
+}
+.row6 h3{
+  font-size: 25px;
+  color: white;
+  margin-left: 25px;
+  font-weight: bold;
+}
+.row6 input{
+  width: 25%;
+  margin-right: 0;
+  height: 35px;
+  margin: 10px;
+  border: 0;
+  border-radius: 25px;
+}
+.row6 .BTN12{
+  margin-left: 0;
+  color: white;
+  font-size: 25px;
+  background-color: #C02335;
+  border-radius: 25px;
+  width: 150px;
+  height: 40px;  text-align: center;
+  margin-top:11px ;
+  margin-left: 0;
+}
+.icons img{
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+  
+}
+.icons img:hover{
+  color:#C02335
+}
+.row6 hr{
+  color: #494848;
+  font-weight: bold;
+}
+.row7 .aboutlink{
+  color: white;
+  background-color: #1A2955;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 0;
+}
+.row7 .aboutlink a{
+  list-style-type: none;
+  text-decoration: none;
+}
+.row7 .aboutlink a:hover{
+  color: #C02335;
+}

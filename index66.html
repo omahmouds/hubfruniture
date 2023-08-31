@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style66.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <ul id="ul">
+        <li><a href="#"><img src="images/icons8-call-30.png">15135</a></li>
+        <li><a href="#"><img src="images/icons8-gps-50.png">Stores</a></li>
+        <div class="right-side"  style="float:right">
+        <li><a href="#"><img src="images/icons8-egypt-48.png">Egypt</a></li>
+        <div class="dropdown">
+            <li class="dropbtn">English</li>
+            <div class="dropdown-content">
+            <a href="#"> عربى </a>
+            </div>
+        </div>
+    </div>
+    </ul>
+        <div class="w3-container menu1">
+            <div class="w3-bar w3-white">
+            <div class="logo" >
+                <a href="index.html" class="w3-bar-item w3-button"> <span>Hub</span>Furniture</a>
+            </div>
+            <div class="w3-dropdown-hover ">
+                <button class="w3-button ">Living Room </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 innerside">
+                    <a href="#" class="w3-bar-item w3-button">Living Room Set </a>
+                    <a href="#" class="w3-bar-item w3-button">Shop by Item </a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover ">
+                <button class="w3-button ">Bed Room </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4  ">
+                    <a href="#" class="w3-bar-item w3-button"> Bed Room Set</a>
+                    <a href="#" class="w3-bar-item w3-button">Shop by Item</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button ">Dining Room </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 ">
+                    <a href="#" class="w3-bar-item w3-button">Dining Room Set</a>
+                    <a href="#" class="w3-bar-item w3-button">Shop by Item</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Graden Furniture</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 ">
+                    <a href="#" class="w3-bar-item w3-button">Outdoor Sofa Sets</a>
+                    <a href="#" class="w3-bar-item w3-button">Outdoor Dinging Sets </a>
+                    <a href="#" class="w3-bar-item w3-button">Hammock</a>
+                    <a href="#" class="w3-bar-item w3-button">Relax chairs </a>
+                    <a href="#" class="w3-bar-item w3-button">Swings </a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button"> NEW </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 ">
+                    <a href="#" class="w3-bar-item w3-button">Kids</a>
+                    <a href="#" class="w3-bar-item w3-button">pillwose</a>
+                    <a href="#" class="w3-bar-item w3-button">bean bags</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="sec-nav">
+        <ul >
+            <li> <a href="index.html">Home </a></li>
+            <li><P class="pp"> > MY Cart </P></li>
+        </ul>
+    </div>
+    <section>
+        <div class="item">
+          <span>Item 1: <img src="images/tv2.jpg"></span>
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+          <span class="price">10</span>
+        </div>
+        <hr>
+        <div class="item">
+          <span>Item 2: <img src="images/eg-en-bedroom.jpg"></span>
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+          <span class="price">15</span>
+        </div>
+        <hr>
+        <div class="item">
+          <span>Item 3: <img src="images/ch2.jpg" alt=""></span>
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+          <span class="price">20</span>
+        </div>
+        
+        <div class="total-price">Total: $<span id="total">0</span></div>
+        
+        <button class="button" onclick="confirmProcess()">Confirm Process</button>
+        <script>
+            const decreaseButtons = document.querySelectorAll('.decrease');
+            const increaseButtons = document.querySelectorAll('.increase');
+            const quantityElements = document.querySelectorAll('.quantity');
+            const priceElements = document.querySelectorAll('.price');
+            const totalElement = document.getElementById('total');
+          
+            let total = 0;
+          
+            function updateTotal() {
+              total = 0;
+          
+              for (let i = 0; i < quantityElements.length; i++) {
+                const quantity = parseInt(quantityElements[i].textContent);
+                const price = parseInt(priceElements[i].textContent);
+                total += quantity * price;
+              }
+          
+              totalElement.textContent = total;
+            }
+          
+            function decreaseQuantity(index) {
+              const quantityElement = quantityElements[index];
+              let quantity = parseInt(quantityElement.textContent);
+          
+              if (quantity > 0) {
+                quantity--;
+                quantityElement.textContent = quantity;
+                updateTotal();
+              }
+            }
+          
+            function increaseQuantity(index) {
+              const quantityElement = quantityElements[index];
+              let quantity = parseInt(quantityElement.textContent);
+          
+              quantity++;
+              quantityElement.textContent = quantity;
+              updateTotal();
+            }
+          
+            function confirmProcess() {
+              alert('Process confirmed!');
+            }
+          
+            for (let i = 0; i < decreaseButtons.length; i++) {
+              decreaseButtons[i].addEventListener('click', () => decreaseQuantity(i));
+            }
+          
+            for (let i = 0; i < increaseButtons.length; i++) {
+              increaseButtons[i].addEventListener('click', () => increaseQuantity(i));
+            }
+          </script>
+</body>
+</html>

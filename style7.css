@@ -1,0 +1,254 @@
+.dropbtn {
+    color: #1A2955;
+    padding: 12px;
+    font-size: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover { color: #992443;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: #992443;
+  }
+  #ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+  }
+  
+    #ul li {
+    float: left;
+    border-right:1px solid #bbb;
+    border-right: none;
+  
+  }
+  
+  
+    #ul li a {
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+    #ul li img{
+    width: 20px;
+  }
+  .logo{
+    background-color: #1A2955;
+    font-size: 25px;
+    width: 15px 50px;
+    color: white;
+  }
+  .logo a{
+    border-radius: 55px;
+  }
+  .logo span{
+    background-color: #C02335;
+    border-radius: 25px;
+    padding: 6px;
+  }
+  .menu1{
+    margin-left:100px ;
+    font-size: 25px;
+  }
+  .inside :hover{
+     color:#C02335 ;/*لسة محتاج اظبط اللون */
+  }
+  .menu1 .logo{
+    margin-left: 0;
+    margin-right: 400px;
+  }
+  .w3-dropdown-hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+}
+ul li {
+    float: left;
+}
+ul li a{
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li .pp{
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li a :hover{
+    color: #C02335; /* the hover is not working why ? */
+}
+/*//////////////////////////////////////////////////////////////////////*/
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*-----------------------------------------------------------------------------*/
+#menum img{
+  filter: brightness(100%);
+  width: 70%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  transform: scale(1.1); /* Reset */
+  transition: transform 0.5s, opacity 0.5s;  
+}
+.fotot{
+  display: block;
+  margin: 35px;
+}
+#menum img:hover{
+  opacity: 1;
+  transform: scale(1.2, 1.2); /* Transform X * 1.4 and Y * 1.4 */
+  transform-origin: center center; /* Transform from X-center and Y-center */
+  transition: transform 0.5s, opacity 0.5s;
+}
+.fotot h2{
+      color: #1A2955;
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 30px;
+}
+.fotot p{
+  color: #1A2955;
+  font-size: 20px;
+}
+.fotot h2:hover{
+  color: #C02335;
+}
+.fotot p:hover{
+  color: #C02335;
+}
+.containerfoto{
+  display: flex;
+  width: 75%;
+  position: absolute;
+  left: 25%;
+}
+/*///////////////////////////////////////////////////////////////////*/
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.containerside{
+  position: absolute;
+  width: 25%;
+  font-size: 25px;
+  color: #1A2955;
+  display: block;
+}
+.containerside h2{
+  margin-top: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  display: block;
+}

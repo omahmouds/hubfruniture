@@ -1,0 +1,242 @@
+.dropbtn {
+    color: #1A2955;
+    padding: 12px;
+    font-size: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover { color: #992443;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: #992443;
+  }
+  #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+  }
+  
+    #navbar li {
+    float: left;
+    border-right:1px solid #bbb;
+    border-right: none;
+  
+  }
+  
+  
+    #navbar li a {
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+    #navbar li img{
+    width: 20px;
+  }
+  .logo{
+    background-color: #1A2955;
+    font-size: 25px;
+    width: 15px 50px;
+    color: white;
+  }
+  .logo a{
+    border-radius: 55px;
+  }
+  .logo span{
+    background-color: #C02335;
+    border-radius: 25px;
+    padding: 6px;
+  }
+  .menu1{
+    margin-left:100px ;
+    font-size: 25px;
+  }
+  .inside :hover{
+     color:#C02335 ;/*لسة محتاج اظبط اللون */
+  }
+  .menu1 .logo{
+    margin-left: 0;
+    margin-right: 400px;
+  }
+  .w3-dropdown-hover{
+    text-decoration: none;
+}
+#navbar2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+}
+#navbar2 li {
+    float: left;
+}
+#navbar2 li a{
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navbar2 li .pp{
+    display: block;
+    color: #1A2955;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navbar2 li a :hover{
+    color: #C02335; /* the hover is not working why ? */
+}
+/*////////////////////////////////////////////////////////////////////////*/
+.container{
+    width: 60%;
+    float: left;
+}
+.foto{
+    overflow: hidden;
+    max-width: 60%;
+    border-radius:15px;
+    width: 20rem;
+    padding: 1rem;
+    margin-left:50px;
+    margin-top: 50px;
+    float: left;
+}
+
+ .popis{
+    position: absolute;
+    bottom: 5px;
+    left: 50px;   
+ }
+ .popis h3{
+   font-weight: 600;
+   color: white;
+ }
+ 
+ main img{
+    filter: brightness(100%);
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    transform: scale(1.1); /* Reset */
+    transition: transform 0.5s, opacity 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ main img:hover{
+    opacity: 1;
+    transform: scale(1.2, 1.2); /* Transform X * 1.4 and Y * 1.4 */
+    transform-origin: center center; /* Transform from X-center and Y-center */
+    transition: transform 0.5s, opacity 0.5s;
+ }
+ .foto h2{
+        color: #1A2955;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 30px;
+}
+ .foto p{
+    color: #1A2955;
+    font-size: 20px;
+}
+ .foto h2:hover{
+    color: #C02335;
+ }
+ .foto p:hover{
+    color: #C02335;
+ }
+/*---------------------------------------------------------------------------------------------------------------*/
+#side33{
+  list-style-type: none;
+margin: 0;
+padding: 0;
+margin-left: 70%;
+width: 20%;
+margin-right:5px ;
+background-color: white;
+height: 100%;
+overflow: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding-left: 25px;
+}
+#side33 li input{
+margin: 25px;
+border: 0;
+border-radius: 25px;
+}
+#side33 li button{
+  background-color: transparent;
+  color:#1A2955;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 15px;
+  float: left;
+}
+#side33 li button:hover{
+background-color: #1A2955;
+color: white;
+}
+#side33 li a{
+display: block;
+}
+#side33 .liside{
+display: flex;
+justify-content: space-between;
+}
+#side33 .ils .img{
+    width: 150px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#side33 .ils img:hover{
+opacity: 1;
+transform: scale(1.2, 1.2); /* Transform X * 1.4 and Y * 1.4 */
+transform-origin: center center; /* Transform from X-center and Y-center */
+}
+#side33 .ils p{
+font-size: 20px;
+color: #1A2955;
+margin-top: 25px;
+cursor: pointer;
+}
+#side33 li h3{
+font-size: 20px;
+color: #1A2955;
+margin: 25px;
+font-weight: bold;
+}
+#side33 .cli{
+display: block;
+text-align: left;
+}
